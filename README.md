@@ -14,42 +14,13 @@ The key consideration is data storage: Docker containers are ephemeral by defaul
 Fork and clone the repositary into your local system
 docker build -t mongo .
 
-
-C:\docker_mongo_initdb>docker build -t mongo .
-[+] Building 2.3s (8/8) FINISHED                                                                         docker:default
- => [internal] load build definition from Dockerfile                                                               0.0s
- => => transferring dockerfile: 138B                                                                               0.0s
- => [internal] load .dockerignore                                                                                  0.0s
- => => transferring context: 2B                                                                                    0.0s
- => [internal] load metadata for docker.io/library/mongo:4.2                                                       2.2s
- => [auth] library/mongo:pull token for registry-1.docker.io                                                       0.0s
- => [internal] load build context                                                                                  0.0s
- => => transferring context: 850B                                                                                  0.0s
- => [1/2] FROM docker.io/library/mongo:4.2@sha256:699d652ed67423d689258bad7b316cf005dfbb82b334118ec306f049042f371  0.0s
- => CACHED [2/2] COPY mongo-init.js /docker-entrypoint-initdb.d/                                                   0.0s
- => exporting to image                                                                                             0.0s
- => => exporting layers                                                                                            0.0s
- => => writing image sha256:f703c2d7eb7f2952bb97de371ec753ecf03a402e4e75c96f2e1d6703b4ed4224                       0.0s
- => => naming to docker.io/library/mongo                                                                           0.0s
-
-What's Next?
-  View summary of image vulnerabilities and recommendations → docker scout quickview
-
 C:\docker_mongo_initdb>
 
 # Find the docker images
 C:\docker_mongo_initdb>docker images
 
-REPOSITORY                         TAG                 IMAGE ID       CREATED          SIZE
-mongo                              latest              f703c2d7eb7f   28 minutes ago   388MB
-
 # Create Docker container
 docker container create -it --name mongo mongo:latest
-
-C:\docker_mongo_initdb>docker container create -it --name mongo keerthibalan/mongo:4.2
-
-
-96b39241afaae655fa3aaa889892fcfb0c1f30e961cfaa32c7a953676d89c8b8
 
 # Start the docker container
 docker container start mongo
