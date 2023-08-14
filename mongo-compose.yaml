@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+    mongo:
+       image: keerthibalan/mongo:4.2
+       command: [--auth]
+       container_name: mongo
+       volumes:
+         - keerthibalan-mongodata:/data/db
+       networks:
+         - server
+networks:
+  server:
+    driver: bridge
+volumes:
+    networks:
+    keerthibalan-mongodata:
