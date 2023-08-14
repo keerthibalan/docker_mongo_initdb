@@ -38,14 +38,7 @@ root@96b39241afaa:/# mongo -u admin
 MongoDB shell version v4.2.24
 Enter password:
 connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
-Implicit session: session { "id" : UUID("4d00c0d3-261f-46b5-8b29-8e5fc20ac32c") }
-MongoDB server version: 4.2.24
-Welcome to the MongoDB shell.
-For interactive help, type "help".
-For more comprehensive documentation, see
-        https://docs.mongodb.com/
-Questions? Try the MongoDB Developer Community Forums
-        https://community.mongodb.com
+
 > show dbs
 tutorialdb  0.000GB
 >
@@ -63,10 +56,10 @@ https://www.docker.com/products/docker-hub/
 docker login -u username (use your own credential for login)
 password: pwd
 
-#Docker Image Push
+# Docker Image Push
 Docker push keerthibalan/mongo:4.2
 
-#Docker compose
+# Docker compose
 Docker Compose is a tool that helps you define and share multi-container applications. With Compose, you can create a YAML file to define the services and with a single command, you can spin everything up or tear it all down.
 
 The big advantage of using Compose is you can define your application stack in a file, keep it at the root of your project repository (it’s now version controlled), and easily enable someone else to contribute to your project.
