@@ -80,7 +80,10 @@ docker-compose -f mongo-compose.yaml up
 
 docker-compose -f mongo-compose.yaml down
 
-
+# Container port
+27017
+# MongoDB default, is bound back to port
+27017
 
 
 
