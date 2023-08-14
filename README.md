@@ -13,6 +13,8 @@ The key consideration is data storage: Docker containers are ephemeral by defaul
 # Create Mongodb docker image
 Fork and clone the repositary into your local system
 docker build -t mongo .
+
+
 C:\docker_mongo_initdb>docker build -t mongo .
 [+] Building 2.3s (8/8) FINISHED                                                                         docker:default
  => [internal] load build definition from Dockerfile                                                               0.0s
@@ -37,6 +39,7 @@ C:\docker_mongo_initdb>
 
 # Find the docker images
 C:\docker_mongo_initdb>docker images
+
 REPOSITORY                         TAG                 IMAGE ID       CREATED          SIZE
 mongo                              latest              f703c2d7eb7f   28 minutes ago   388MB
 
@@ -44,6 +47,8 @@ mongo                              latest              f703c2d7eb7f   28 minutes
 docker container create -it --name mongo mongo:latest
 
 C:\docker_mongo_initdb>docker container create -it --name mongo keerthibalan/mongo:4.2
+
+
 96b39241afaae655fa3aaa889892fcfb0c1f30e961cfaa32c7a953676d89c8b8
 
 # Start the docker container
