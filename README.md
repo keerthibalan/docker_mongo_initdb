@@ -25,19 +25,13 @@ docker container create -it --name mongo mongo:latest
 # Start the docker container
 docker container start mongo
 
-C:\docker_mongo_initdb>docker container start mongo
-mongo
-
 # command provides a way to access it in a running container
 docker exec -it mongo /bin/bash
 
 # Login to mongo docker container 
 
-C:\docker_mongo_initdb>docker exec -it mongo /bin/bash
+docker exec -it mongo /bin/bash
 root@96b39241afaa:/# mongo -u admin
-MongoDB shell version v4.2.24
-Enter password:
-connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
 
 > show dbs
 tutorialdb  0.000GB
